@@ -39,7 +39,7 @@ def main():
         for collisions in asteroids:
             for bullets in shots:
                 if collisions.collides_with(bullets):
-                    collisions.kill()
+                    collisions.split()
                     bullets.kill()
 
         for asteroid in asteroids:
